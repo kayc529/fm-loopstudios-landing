@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Hero from './components/Hero';
+import Container from './components/styles/Container.styled';
+import InteractiveVRBanner from './components/InteractiveVRBanner';
+import Creations from './components/Creations';
+import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Hero />
+      <Container>
+        <InteractiveVRBanner />
+        <Creations />
+      </Container>
+      <Footer />
+    </>
   );
 }
 
