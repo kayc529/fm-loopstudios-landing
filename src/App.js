@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import MenuModal from './components/MenuModal';
 
 function App() {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <>
