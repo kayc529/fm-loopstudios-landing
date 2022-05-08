@@ -53,7 +53,7 @@ const Header = styled.header`
 
   @media (max-width: 768px) {
     .navbar {
-      visibility: hidden;
+      display: none;
     }
 
     .header-container {
@@ -61,6 +61,7 @@ const Header = styled.header`
     }
 
     .navbar-container {
+      max-width: 100%;
       align-items: center;
     }
 
@@ -78,7 +79,7 @@ const Header = styled.header`
     }
 
     .menu-icon {
-      display: flex;
+      display: block;
     }
   }
 `;

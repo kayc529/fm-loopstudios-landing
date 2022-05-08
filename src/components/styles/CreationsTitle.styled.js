@@ -13,20 +13,19 @@ const CreationsTitle = styled.div`
     font-weight: 300px;
   }
 
-  button {
-    background: white;
-    border: 1px solid black;
-    text-transform: uppercase;
-    width: 157px;
-    height: 40px;
-    font-size: 14px;
-    letter-spacing: 5px;
-  }
+  @media (max-width: 768px) {
+    & {
+      justify-content: center;
+      padding-bottom: 48px;
+    }
 
-  button:hover {
-    background: black;
-    color: white;
-    cursor: pointer;
+    h1 {
+      font-size: 32px;
+    }
+
+    button {
+      display: none;
+    }
   }
 `;
 

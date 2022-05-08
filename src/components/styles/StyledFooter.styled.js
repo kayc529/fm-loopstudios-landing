@@ -17,7 +17,7 @@ const StyledFooter = styled.footer`
     margin: 0 auto;
   }
 
-  .footer-right-column {
+  .footer-left-column {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -32,6 +32,31 @@ const StyledFooter = styled.footer`
   p {
     margin-top: 8px;
     opacity: 0.5;
+  }
+
+  @media (max-width: 768px) {
+    & {
+      margin-top: 96px;
+      height: 470px;
+      padding: 56px 51px 56px;
+    }
+
+    .footer-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .footer-left-column {
+      align-items: center;
+    }
+
+    .footer-right-column {
+      align-items: center;
+    }
   }
 `;
 

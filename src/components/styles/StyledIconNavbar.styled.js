@@ -13,6 +13,7 @@ const StyledIconNavbar = styled.nav`
     display: flex;
     flex-direction: column;
   }
+
   a {
     padding-right: 12px;
   }
@@ -30,6 +31,12 @@ const StyledIconNavbar = styled.nav`
     visibility: visible;
     opacity: 1;
     transform: translateX(0);
+  }
+
+  @media (max-width: 768px) {
+    & {
+      margin-top: 48px;
+    }
   }
 `;
 

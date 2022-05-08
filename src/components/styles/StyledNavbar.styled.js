@@ -39,6 +39,21 @@ const StyledNavbar = styled.nav`
     opacity: 1;
     transform: translateX(0);
   }
+
+  @media (max-width: 768px) {
+    & {
+      height: auto;
+    }
+
+    ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      padding: 0;
+    }
+  }
 `;
 
 export default StyledNavbar;
