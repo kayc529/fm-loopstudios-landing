@@ -51,6 +51,10 @@ const Header = styled.header`
     display: none;
   }
 
+  .menu-icon:hover {
+    cursor: pointer;
+  }
+
   @media (max-width: 768px) {
     .navbar {
       display: none;
